@@ -1,7 +1,12 @@
 *{
 	
-	color: rgba(141, 137, 118, 1);
+	color: darkred;
 	
+}
+abbr[title]{
+
+	text-decoration: none;
+
 }
 body{
 
@@ -9,7 +14,27 @@ body{
 	background-color: rgba(255, 250, 223, 0.9);
 	text-align: center;
 	margin: auto;
+	line-height: 2.5;
 	
+}
+h1{
+
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+}
+hr{
+
+	background-color: rgba(255, 250, 223, 0.9);
+	border-color: rgba(139, 0, 0, 0.9);
+	border-style: dashed none dashed none;
+	border-width: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 60%;
+
 }
 .row{
 	
@@ -20,10 +45,11 @@ body{
 #section_description{
 
 	max-width: 100%;
-	max-height: 100%;
+	height: 100%;
 	margin-top: 1%;
 	margin-bottom: 1%;
-	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
 	
 }
 #section_embed{
@@ -32,19 +58,41 @@ body{
 	margin-bottom: 1%;
 	
 }
+#section_intro, #section_marksheets, #section_certifications{
+
+	overflow-x: auto;
+	transition: box-shadow 1s, padding 1s;
+
+}
+#section_intro:hover, #section_marksheets:hover, #section_certifications:hover{
+
+	box-shadow: 0 5px 10px 0 rgba(244, 80, 80, 0.2), 0 7px 25px 0 rgba(244, 80, 80, 0.19);
+	padding: 3%;
+
+}
 iframe{
 	
 	width: 100%;
 	height: 100%;
 	
 }
+.intro_col{
+
+	max-width: 50%;
+	height: auto;
+	margin: auto;
+	padding: 2%;
+
+}
 #photo{
 	
+	/*
 	max-width: 50%;
 	max-height: 50%;
-	border: 0.5px solid rgba(141, 137, 118, 1);
-	margin: 20px;
-	transition: border-width 1s;
+	*/
+	border: 0.5px solid darkred;
+	/*margin: 10px;*/
+	transition: border-width 0.5s;
 	
 }
 #photo:hover{
@@ -69,4 +117,27 @@ iframe{
 	max-width: 25px;
 	max-height: 25px;
 	
+}
+#section_description, #section_embed{
+
+	padding: 1.5%;
+
+}
+.table_row__hover{
+
+	transition: background-color 2s;
+
+}
+.table_row__hover:hover{
+
+	background-color: rgb(230, 204, 76);
+
+}
+.table_spacing{
+
+	margin-left: auto;
+	margin-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+
 }
