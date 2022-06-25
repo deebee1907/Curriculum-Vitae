@@ -19,6 +19,3 @@ Updated on 1-06-2022
 
 ### Version 2.0
 Updated on 10-06-2022
-
-### Version 3.0
-Updated on 25-06-2022
